@@ -8,6 +8,6 @@ app.get('/',function(req,res) {
 
 //app.use('/',router);
 
-app.listen(3005, function(){
-    console.log("server running on port 3005");
+app.listen(process.env.PORT || 3005, function(){
+    console.log("server running");
 });
